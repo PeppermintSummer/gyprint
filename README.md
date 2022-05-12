@@ -1,6 +1,9 @@
 # gyprint
 print shape for torch.Tensor
 
+# install
+`pip install gyprint`
+
 # usage
 ```
 import numpy as np
@@ -31,4 +34,4 @@ gprint(dic)
 print("done")
 ```
 
-# enjoy it !!!
+# enjoy it !!!:stuck_out_tongue_closed_eyes:
