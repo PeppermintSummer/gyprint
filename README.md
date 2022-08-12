@@ -9,6 +9,7 @@ print shape for torch.Tensor
 import numpy as np
 import torch
 from gyprint import gprint
+from gyprint import mprint
 a__int = torch.tensor([1,2,3])
 
 lis = []
@@ -22,6 +23,9 @@ dic['col'] = a__int
 gprint(listuple)
 gprint(a__int)
 gprint(dic)
+
+n = torch.randn(3,4,5)
+mprint(n,n)
 '''
 +-------------------+--------------+------------------------+-----------------+
 | <class 'tuple'>:2 | index/keys() |       value type       |    Size Info    |
