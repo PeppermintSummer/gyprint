@@ -4,7 +4,44 @@ print shape for torch.Tensor
 # install
 `pip install gyprint`
 
-# usage
+# usage for 0.0.2
+```
+import numpy as np
+import torch
+from gyprint import gprint
+a__int = torch.tensor([1,2,3])
+
+lis = []
+dic = dict()
+lis.append(a__int)
+lis.append(a__int)
+listuple = tuple(lis)
+dic['det'] = a__int
+dic['col'] = a__int
+
+gprint(listuple)
+gprint(a__int)
+gprint(dic)
+'''
++-------------------+--------------+------------------------+-----------------+
+| <class 'tuple'>:2 | index/keys() |       value type       |    Size Info    |
++-------------------+--------------+------------------------+-----------------+
+|      listuple     |      0       | <class 'torch.Tensor'> | torch.Size([3]) |
+|      listuple     |      1       | <class 'torch.Tensor'> | torch.Size([3]) |
++-------------------+--------------+------------------------+-----------------+
+
+ ############### ['listuple'] is <class 'tuple'>, length is 2 ############### 
+['listuple'], 0 =====> <class 'torch.Tensor'> =====> torch.Size([3])
+['listuple'], 1 =====> <class 'torch.Tensor'> =====> torch.Size([3])
+ ['a__int'] =====> <class 'torch.Tensor'> =====> torch.Size([3]) 
+ ############### ['dic'] is <class 'dict'>, length is 2 ############### 
+['dic'], keys: det, value=====> <class 'torch.Tensor'> =====> torch.Size([3])
+['dic'], keys: col, value=====> <class 'torch.Tensor'> =====> torch.Size([3])
+'''
+print("done")
+```
+
+# usage for 0.0.1
 ```
 import numpy as np
 import torch
